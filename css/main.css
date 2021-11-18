@@ -373,7 +373,7 @@ footer {
   height: 100%;
 }
 
-.links a {
+footer a {
   color: #000;
   text-decoration: none;
   transition: all .3s;
@@ -384,10 +384,12 @@ footer {
   transition: all .3s;
 }
 
-.links a:hover, #fb-d:hover, #ig-d:hover, #be-d:hover {
+footer a:hover, #fb-d:hover, #ig-d:hover, #be-d:hover {
   color: #30bf97;
   fill: #30bf97;
 }
+
+
 
 
 
