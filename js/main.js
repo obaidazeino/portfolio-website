@@ -7,10 +7,12 @@ console.log(ham)
 console.log(arrow)
 
 function openNav() {
+  ham.style.transform = "rotate(90deg)"
   sideNav[0].style.width = "250px"
 }
 
 function closeNav() {
+  ham.style.transform = "rotate(-180deg)"
   sideNav[0].style.width = "0"
 
 }
@@ -44,7 +46,7 @@ for (let i=0; i<locs.length; i++) {
 }
 
 
-// parallax?
+// parallax
 
 const bannerText = document.getElementById("banner-text")
 const placesText = document.getElementById("places-text")

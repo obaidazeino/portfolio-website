@@ -12,6 +12,12 @@ body {
   margin: 0;
   padding: 0;
 }
+
+:focus {
+    outline: 3px solid #30bf97;
+    outline-offset: 3px;
+}
+
 /* side navigation */
 
 .side-nav-container p:first-child {
@@ -83,6 +89,17 @@ transition: all .3s;
   justify-content: space-around;
 }
 
+.contactinfo address {
+  margin-bottom: 0;
+}
+
+.contactinfo a {
+  font-size: .8rem;
+}
+
+.contactinfo {
+  margin-bottom: 2rem;
+}
 /* banner */
 
 #hamburger {
@@ -93,6 +110,15 @@ transition: all .3s;
   left: 2rem;
   z-index: 100;
   cursor: pointer;
+  transition: all .5s;
+}
+
+.logo {
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
 }
 
 #hamburger rect {
@@ -124,7 +150,7 @@ transition: all .3s;
 hgroup {
   position: absolute;
   right: 25%;
-  bottom: 50%;
+  bottom: 40%;
   transform: translateY(50%);
   font-family: 'Lobster Two', cursive;
   color: #fff;
@@ -270,10 +296,13 @@ svg#map {
   background: -o-linear-gradient(bottom left, #ffffff 0%, #ffffff 15%, #207364 15%, #207364 69%, #ffffff 69%, #ffffff 81%, #207364 81%, #207364 92%, #ffffff 92%, #ffffff 99%);
   background: linear-gradient(to top right, #ffffff 0%, #ffffff 15%, #207364 15%, #207364 69%, #ffffff 69%, #ffffff 81%, #207364 81%, #207364 92%, #ffffff 92%, #ffffff 99%);
   display: block;
+  overflow: hidden;
 }
 
 .quote-wrapper {
-  padding: 5rem;
+  padding: 8rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .quote-wrapper p {
@@ -295,6 +324,16 @@ svg#map {
   font-size: 20rem;
 
 
+}
+
+.quote-wrapper p:after {
+  content: "A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.";
+  position: absolute;
+  left: -7rem;
+  top: -15rem;
+  font-size: 15rem;
+  line-height: 17rem;
+  opacity: .3;
 }
 
 .quote-wrapper small {
@@ -338,7 +377,7 @@ footer {
   color: #000;
   text-decoration: none;
   transition: all .3s;
-  
+
 }
 
 #fb-d, #ig-d, #be-d {
@@ -368,6 +407,11 @@ footer {
   .map-container h3 {
     font-size: 6rem;
 
+  }
+
+  .logo {
+    width: 6rem;
+    height: 6rem;
   }
 
 }
